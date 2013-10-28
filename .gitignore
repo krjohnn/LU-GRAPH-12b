@@ -11,3 +11,19 @@
 *.lai
 *.la
 *.a
+
+#Folders
+/bin
+/img
+/obj
+
+#Vim swp
+*.swp
+
+#DLL
+*.dll
+
+#C::B
+*.cbp
+*.depend
+*.layout
