@@ -86,11 +86,11 @@ int main(int argc, char* argv[]){
     glClear(GL_COLOR_BUFFER_BIT);
     if (e.type == SDL_KEYDOWN)
          {
-            if(e.key.keysym.scancode == SDL_SCANCODE_0)
+            if(e.key.keysym.scancode == SDL_SCANCODE_0 && n<6)
             {
                 n++;
             }
-            else if(e.key.keysym.scancode == SDL_SCANCODE_1){
+            else if(e.key.keysym.scancode == SDL_SCANCODE_1 && n>0){
                 n--;
             }
          }
