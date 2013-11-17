@@ -15,7 +15,7 @@ using std::cout;
 typedef GLfloat point2[2];
 /* initial triangle  global variables */
 point2 v[]={{-1.0, -0.58}, {1.0, -0.58},
-{0.0, 1.15}};
+{0.0, 1.58}};
 int n = 0; /* number of recursive steps */
 
 void triangle( point2 a, point2 b, point2 c)
@@ -80,7 +80,7 @@ int main(int argc, char* argv[]){
   // ... can be used alongside SDL2.
   SDL_Event e;
   //SDL_MouseButtonEvent mbe;
-  while(e.key.keysym.scancode!=SDL_SCANCODE_ESCAPE){  // Enter main loop.
+  while(e.type!=SDL_QUIT && e.key.keysym.scancode!=SDL_SCANCODE_ESCAPE){  // Enter main loop.
     SDL_PollEvent(&e); // Check for events.
 
     glClear(GL_COLOR_BUFFER_BIT);
